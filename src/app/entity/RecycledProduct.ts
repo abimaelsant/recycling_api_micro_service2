@@ -1,5 +1,4 @@
 import { Entity, PrimaryGeneratedColumn, Column, CreateDateColumn, ManyToOne, JoinColumn } from "typeorm";
-import User from './User';
 
 @Entity('recycled_products')
 class RecycledProduct {
