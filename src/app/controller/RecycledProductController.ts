@@ -18,7 +18,7 @@ class RecycledProductController {
     
       async store(request: Request, response: Response) {
         const recycledRepository = new RecycledProductRepository();
-        request.body.userId = request.user.id;
+        //request.body.userId = request.user.id;
         const recycled = await recycledRepository.create(request.body);
         return response.status(201).json(recycled)
       }
